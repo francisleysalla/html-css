@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media no site</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <picture>
+        <source media="(min-width: 1030px)" srcset="media/foto-g.png" type="image/png">
+        <source media="(min-width: 730px)" srcset="media/foto-m.png" type="image/png">
+        <img src="media/foto-p.png" alt="A imagem flexível funciona!">
+    </picture>
+    <hr>
+
+    <h1>Áudio</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="media/happy-mistake.mp3" type="audio/mp3">
+        <p>Seu navegador não suporta áudio. <a href="media/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mp3">Clique para baixar.</a></p>
+    </audio>
+    <hr>
+
+    <h1>Vídeo</h1>
+    <h2>No servidor</h2>
+    <video width="600px" poster="media/limoes-capa.png" controls autoplay>
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.m4v" type="video/m4v">
+        <source src="media/meu-video.ogv" type="video/ogg">
+        <source src="media/meu-video.webm" type="video/webm">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+    <h2>No Youtube ou Vimeo</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bM2ODTk2r8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+/* Configurações iniciais */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --font-t: 'Passion One','Arial Black','Arial',verdana,sans-serif;
+    --font-c: Sriracha, Brush Script MT, cursive;
+    --cor-f: #A9A9A9;
+}
+body{
+    background-color:var(--cor-f);
+}
+/* Configurações do Header */
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+header h1{
+    font:small-caps bold 10vw var(--font-t);
+}
+/* Configurações do main e section geral*/
+main{
+    background-color: white;
+    font: 3.5vw var(--font-c);
+    line-height: 2em;
+}
+
+/* Configuração das sections normais */
+section.normal{
+    padding: 30px;
+}
+section.normal p{
+    margin: 50px 0px 100px;
+}
+/* Configuração das sections de foto */
+section.foto{
+    padding: 100px 25px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.493);
+}
+section.foto p{
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+section.foto#f1{
+    background: var(--cor-f) url('imagens/background001.jpg') center right/cover no-repeat fixed;
+}
+section.foto#f2{
+    background: var(--cor-f) url('imagens/background002.jpg') center right/cover no-repeat fixed;
+}
+/* Configuração dos links */
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* Configuração do footer */
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

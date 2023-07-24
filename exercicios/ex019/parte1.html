@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+    <style>
+        div.divisao{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: black;
+        }
+        div#d1 {
+            background-color: grey;
+        }
+        div#d2 {
+            background-image: linear-gradient(to bottom, rgb(255, 81, 0), #ffd700);
+        }
+        div#d3 {
+            background-image: url("imagens/pattern001.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="divisao" id="d1"></div>    
+    <div class="divisao" id="d2"></div>    
+    <div class="divisao" id="d3"></div>
+</body>
+</html>

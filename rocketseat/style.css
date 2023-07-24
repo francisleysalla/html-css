@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Color variables for darkmode */
+:root {
+  --image: url("./assets/bg-mobile.jpg");
+  --font-color: white;
+  --back-color: rgba(255, 255, 255, 0.1);
+  --back-color-hover: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.5);
+  --btnbg: url("./assets/moon-stars.svg");
+}
+
+:root.light {
+  --image: url("./assets/bg-mobile-light.jpg");
+  --font-color: black;
+  --back-color: rgba(0, 0, 0, 0.05);
+  --back-color-hover: rgba(0, 0, 0, 0.01);
+  --border-color: rgba(0, 0, 0, 0.5);
+  --btnbg: url("./assets/sun.svg");
+}
+
+/* Body Formatting */
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--image) top center/cover no-repeat fixed;
+  color: var(--font-color);
+  font: 500 1em "Inter", sans-serif;
+}
+div#center {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto;
+}
+
+/* Header foramtting */
+header {
+  text-align: center;
+}
+header img {
+  width: 112px;
+  margin: 15px;
+}
+
+/* Switch */
+
+div#switch {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+  
+
+button#btn {
+  /* Localização */
+  position: absolute;
+  left: 0px;
+  /* Estilo */
+  border-radius: 50%;
+  translate: -50%;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background: white var(--btnbg) center center/16px no-repeat;
+  animation: slide-out 0.3s;
+   box-shadow:0px 2px 8px rgba(0, 0, 0, 0.25);
+   z-index: 1;
+   transition: outline-color 0.2s;
+   outline: 8px solid rgba(0,0,0,0);
+}
+button#btn:hover{
+   outline: 8px solid var(--back-color);
+}
+:root.light button#btn {
+  animation: slide-in 0.3s forwards;
+  
+}
+span#fbtn {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: var(--back-color);
+  border-radius: 9999px;
+  border: 1px solid var(--border-color);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* Nav formatting */
+main nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+}
+main nav ul li {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--back-color);
+  padding: 16px;
+  border-radius: 8px;
+  gap: 16px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: border-color 0.2s;
+}
+main nav ul li:hover{
+   border:2px solid var(--font-color);
+   padding: 15px;
+}
+main nav ul a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* Nav social formatting */
+nav#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2em;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+nav#social a {
+  display: flex;
+  color: var(--font-color);
+  padding: 10px;  
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+nav#social a:hover{
+   background-color: var(--back-color);
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  font: 400 0.8em "Inter", sans-serif;
+}
+
+/* Rule for large devices */
+@media screen and (min-width: 768px) {
+  :root {
+    --image: url("./assets/bg-desktop.jpg");
+  }
+  :root.light {
+    --image: url("./assets/bg-desktop-light.jpg");
+  }
+}
+
+/* Rule for animation of the switch */
+
+@keyframes slide-in {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}

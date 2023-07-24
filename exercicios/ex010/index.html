@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+</head>
+<body>
+    <h1>Tipos de listas</h1>
+    <hr>
+    <h2>Listas ordenadas</h2>
+    <ol type="1">
+        <li>O marcador das listas ordenadas pode ser modificado:</li>
+        <ol type="I">
+            <li><em><code>type="1"</code></em> deixa o marcador <strong>numérico</strong></li>
+            <li><em><code>type="A"</code></em> deixa o marcador em <strong>letras maiúsculas</strong></li>
+            <li><em><code>type="a"</code></em> deixa o marcador em <strong>letras minúsculas</strong></li>
+            <li><em><code>type="I"</code></em> deixa o marcador em <strong>romanos maiúculos</strong></li>
+            <li><em><code>type="i"</code></em> deixa o marcador em <strong>romanos minúsculos</strong></li>
+        </ol>
+        <li>Usando o parâmetro start podemos modificar onde começará a contagem</li>
+        <ol type="A" start="7">
+            <li>Essa lista serve de exemplo</li>
+            <li>parâmetro type="A"</li>
+            <li>parâmetro start="7"</li>
+            <li>O parâmetro <em>start</em> necessáriamente tem que ser um número.</li>
+        </ol>
+    </ol>
+    <h2>Lista não ordenadas</h2>
+    <ul type="disc">
+        <li>As listas não ordenadas tem marcadores fixos</li>
+        <li>Seu marcador também pode ser modificado</li>
+        <ul type="square">
+            <li><em><code>type="disc"</code></em> deixa o marcador como um disco cheio</li>
+            <li><em><code>type="square"</code></em> deixa o marcador como um quadrado cheio</li>
+            <li><em><code>type="circle"</code></em> deixa o marcador como um círculo</li>
+        </ul>
+    </ul>
+    <h2>Listas de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de conteúdo em um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site</dd>
+    </dl>
+</body>
+</html>

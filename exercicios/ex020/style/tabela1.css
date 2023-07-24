@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+caption{
+    background-color: grey;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+table{
+    width: 600px;
+    border: 1px solid rgb(15, 12, 12);
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+td, th{
+    border:1px solid black;
+    height: 30px;
+}
+tfoot,thead{
+    color: white;
+    background-color: #363636;
+}
+tbody > tr:nth-child(even){
+    background-color: #dddddd;
+}

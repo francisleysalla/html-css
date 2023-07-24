@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe dinâmico</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+
+        }
+        iframe#f{
+            width: 100%;
+            height: 70vh;
+            border: 2px solid black;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mudando o conteúdo do Iframe</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tempora quibusdam illum laudantium reprehenderit non facilis doloribus ea adipisci iusto necessitatibus, quisquam perspiciatis repellendus repellat laboriosam! Adipisci, eos? Dolorum, adipisci? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet consectetur sapiente provident qui cumque voluptates aperiam eum. Numquam officiis sint, labore ullam voluptatibus rem quisquam! Odit aspernatur suscipit sed. Magni.</p>
+    <ul>
+        <li><a href="../ex020/tabela2.html" target="frame">Tabela mesclada</a></li>
+        <li><a href="../../desafios/d012B/index.html" target="frame">Desafio do Cordel</a></li>
+        <li><a href="../../desafios/d10B/android.html" target="frame">Desafio do Android</a></li>
+        <li><a href="../ex020/tabela1.html" target="frame">Tabela IDH e população</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis illum architecto commodi autem cupiditate iste odio incidunt itaque? Explicabo cum possimus, cupiditate tempora aspernatur repellendus illum quasi saepe sunt laborum!</p>
+    <iframe id="f" src="../ex020/tabela2.html" frameborder="0" name="frame" sandbox="sandbox" referrerpolicy="no-referer">
+        <p>Não foi possível carregar o conteúdo.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur voluptate sint adipisci inventore rem aliquam mollitia? Enim, quae ex? Vel repudiandae non ex aspernatur cupiditate ipsa autem! Magni, magnam iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis at cum doloribus. At accusantium, delectus ad repudiandae soluta reprehenderit, impedit eius omnis cumque maxime dignissimos. Sapiente sequi in vel corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam velit eveniet dolorum accusamus eius. Reprehenderit officiis aut est amet fuga, excepturi iusto enim fugit in possimus animi cum quam!</p>
+</body>
+</html>

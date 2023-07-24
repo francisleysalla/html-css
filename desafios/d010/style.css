@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@font-face {
+    font-family: titulo;
+    src: url(fontes/idroid.otf) format('opentype');}
+/* Formatação das tags */
+html{
+    margin: 0px;}
+body{
+    margin: 0px;
+    background-color: #84E1AD; 
+    font-family: Arial, Helvetica, sans-serif;}
+
+/* Formatação do header e menu */
+header#principal{
+    color: white; 
+    background-image: linear-gradient(to bottom, #61E39B,#1A5C38); 
+    text-align: center;
+    height: 200px;
+    padding: 10px;}
+nav ul{
+    text-align: left;}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+    width: 100px;}
+nav li a{
+    text-decoration: none;
+    color: white;}
+/* Formatação do main */
+main h1{
+    font:2.5em titulo,'Times New Roman',times,serif;
+    color:#1A5C38;
+    text-align: center;}
+main h2{
+    font:2em titulo,'Times New Roman',times,serif;
+    color:#1A5C38;
+    text-align: center;}
+main{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 800px;
+    margin:auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.349);}
+p{
+    text-align: justify; 
+    text-indent: 30px;}
+/* Formatação das imagens */
+img.imagem{
+    margin:auto;
+}
+/* Formatação do Aside */
+aside header{
+    background-color: #2FA866;
+    color: white;}
+aside{
+    background-color: #C5EBD6;
+    border-radius: 5px;
+    padding: 10px;}
+/* Formatação do Footer */
+footer{
+    background-color: #1A5C38;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    padding: 3px;}

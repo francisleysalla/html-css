@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto DevLinks</title>
+  </head>
+  <body>
+    <div id="center">
+      <header>
+        <!-- Foto -->
+        <img src="./assets/avatar.png" alt="Foto de Maik Brito" id="foto"/>
+        <!-- Mudar com JavaScript -->
+        <p>@maikbrito</p>
+        <!-- Switch -->
+        <div id="switch">
+          <button id="btn" onclick="toggle()"></button>
+          <span id="fbtn"></span>
+        </div>
+      </header>
+      <main>
+        <nav>
+          <ul>
+            <a href="#"><li>Inscreva-se no NLW</li></a>
+            <a href="#"><li>Baixe meu e-book</li></a>
+            <a href="#"><li>Veja meu portfólio</li></a>
+            <a href="#"><li>Conheça o Explorer</li></a>
+          </ul>
+        </nav>
+        <nav id="social">
+          <!-- Emojis -->
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </nav>
+      </main>
+      <footer>
+        Feito com <ion-icon name="heart"></ion-icon> por Francisley Salla
+      </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

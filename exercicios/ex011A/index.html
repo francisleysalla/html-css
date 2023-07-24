@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site adaptável</title>
+</head>
+<body>
+    <h1>Exemplo de fotos flexíveis</h1>
+    <p>Podemos ver abaixo um exemplo de imagens flexíveis com a imagem de tamanho p sendo a padrão caso as outras não deem certo.</p>
+    <p>Fui eu quem fiz as 4 imagens no Gimp.</p>
+    <picture>
+        <source media="(min-width: 1025px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 725px)" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(max-width: 524px)" srcset="imagens/foto-pp.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="A imagem flexível funciona!">
+    </picture>
+</body>
+</html>

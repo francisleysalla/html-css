@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+/* Configurações iniciais */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #A9A9A9;
+}
+:root{
+    --font-t: 'Passion One','Arial Black','Arial',verdana,sans-serif;
+    --font-c: Sriracha, Brush Script MT, cursive;
+}
+/* Configurações do Header */
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+header h1{
+    font: small-caps bold 10vw var(--font-t);
+}
+/* Configurações dos parágrafos */
+main{
+    background-color: white;
+    font: 3.5vw var(--font-c);
+    padding:30px 0px 20px 0px;
+}
+main > p{
+    margin: 20px 0px 100px 30px;
+}
+/* Config das divs */
+div.exterior{
+    padding: 80px 0px 80px 30px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.486);
+    margin:50px 0px 50px 0px;
+}
+
+div#t1{
+    background: white url('imagens/background001.jpg') center center fixed;
+    background-size:cover;
+}
+div#t2{
+    background: white url('imagens/background002.jpg') center center fixed;
+    background-size:cover;
+}
+div.interior > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+    text-shadow: 1px 1px 0px black;     
+    padding: 5px;
+}
+
+
+/* Configuração dos links */
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* Configuração do footer */
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
