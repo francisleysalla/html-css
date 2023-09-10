@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia no site</title>
+</head>
+<body>
+    <h1>Adicionando mídia ao site</h1>
+    <h2>Áudio</h2>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="media/happy-mistake.mp3" type="audio/mp3">
+        <p>Seu navegador não suporta áudio. <a href="media/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mp3">Clique para baixar.</a></p>
+    </audio>
+    <hr>
+
+    <h2>Vídeo</h2>
+    <h3>No servidor</h3>
+    <video width="600px" poster="media/limoes-capa.png" controls autoplay>
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.m4v" type="video/m4v">
+        <source src="media/meu-video.ogv" type="video/ogg">
+        <source src="media/meu-video.webm" type="video/webm">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+    <h3>Video hospedado no youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F7AVrgkz8Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3>Video hospedado no vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/43319180?h=31dbebf4af&color=00000" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
