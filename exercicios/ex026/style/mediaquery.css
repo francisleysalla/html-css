@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@media only screen and (min-width:768px) and (max-width:992px){
+    body{
+        background: #5f2c82 linear-gradient(to bottom,#5f2c82,#49a09d) no-repeat fixed;
+    }
+    section{
+        height: 300px;
+        width: 80%;
+    }
+    div#imagem{
+        width: 30%;
+        height: 100%;
+        background: #5f2c82 url(../imagens/foto.jpg) center center/cover no-repeat fixed;
+        float: left;
+    }
+    div#form{
+        width: 70%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width:992px){
+    body{
+        background: #5f2c82 linear-gradient(to bottom,#5f2c82,#49a09d) no-repeat fixed;
+    }   
+    section{
+        height: 350px;
+        width: 900px;
+    }
+    div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+        background: #5f2c82 url(../imagens/foto.jpg) center center/cover no-repeat fixed;
+
+    }
+    div#form{
+        width: 50%;
+        float: left;
+        font-size: 1.1em;
+    }
+    div#form p{
+        font-size: 0.9em;
+        margin: 20px 0px;
+    }
+    div#form h1{
+        font-size: 1.8em;
+    }
+    form *{
+        margin-bottom: 7px;
+    }
+}
