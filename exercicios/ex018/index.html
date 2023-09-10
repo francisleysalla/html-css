@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Semânticas</title>
+    <style>
+        *{
+            padding:10px;
+        }
+        html{
+            padding:0px;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0px;
+            padding:0px;
+            background-image: linear-gradient(180deg, rgb(230,230,230), rgb(190,190,190));
+        }
+        header#principal{
+            background-color:black;
+            color: white;
+        }
+        nav > a{
+            display:inline-block;
+            background-color: rgb(235, 152, 0);
+            color:aliceblue;
+            border-radius: 5px;
+            text-decoration: none;         
+            text-align: center;   
+            margin: 0px 0px;
+            width: 100px;
+        }
+        nav{
+            text-align: center;
+            padding-bottom: 0px;
+        }
+        nav > a:hover{
+            background-color: rgb(156, 102, 0);
+        }
+        main {
+            position: relative;
+            width: 70%;
+            margin:auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
+        }
+        article{
+            width: 65%;
+        }
+        aside#lateral{
+            width:30%;
+            position:absolute;
+            right: 0px;
+            top: 230px;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        footer{
+            background-color: rgb(80,80,80);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header id="principal">
+        <h1>Esse é o título do site</h1>
+        <nav><a href="#">link</a> <a href="#">link</a> <a href="#">link</a> <a href="#">link</a></nav>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h1>Como fazer algo</h1>
+            </header>
+            <article>
+                <h2>Maneira teórica</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, ut inventore quaerat natus provident neque nulla libero obcaecati vitae nobis distinctio deserunt repudiandae iusto quam tempore esse nesciunt explicabo sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ut debitis doloremque, laborum veritatis vitae enim rem, tenetur voluptatum voluptates cumque et nihil reprehenderit. Ut mollitia maiores sed iusto repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas odio ipsa similique dignissimos laudantium alias expedita at, commodi, repellendus debitis nobis exercitationem ab eius dolores provident maxime, libero tempore assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi odit ducimus suscipit commodi debitis accusantium ipsum ipsam fugit rem sunt consequatur inventore provident, similique voluptate quo excepturi labore atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum laudantium excepturi perspiciatis id, asperiores provident odit placeat voluptates molestias facilis ut architecto vitae, et aliquid esse eaque accusantium reiciendis?</p>
+            </article>
+            <article>
+                <h2>Maneira prática</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem qui aliquam minus sed. Necessitatibus tempora temporibus repellendus ipsum perspiciatis vitae blanditiis repudiandae mollitia? Odio modi voluptas rem quam repellendus?</p>
+                <aside>
+                    Tabela sobre algo
+                </aside>
+            </article>
+        </section>
+        <aside id="lateral">
+            Links para outros artigos.
+            <p><a href="#">Link artigo 1</a></p>
+            <p><a href="#">Link artigo 2</a></p>
+            <p><a href="#">Link artigo 3</a></p>
+            <p><a href="#">Link artigo 4</a></p>
+            <p><a href="#">Link artigo 5</a></p>
+        </aside>
+    </main>
+    <footer>
+        Esse é o rodapé do site. <br>
+        By: Francisley Salla 
+    </footer>
+</body>
+</html>
