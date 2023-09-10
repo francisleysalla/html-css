@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="ffoto">Foto do perfil:</label><input type="file" name="foto" id="ffoto" accept="image/*"></p>
+
+        <p><label for="fage">Idade:</label><input type="number" name="age" id="fage" min="0" max="150" value="20"></p>
+
+        <p><fieldset style="width:100px;">
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="sexm" checked><label for="sexm">Masculino</label>
+            <input type="radio" name="sex" id="sexf"><label for="sexf">Feminino</label>
+        </fieldset></p>
+
+        <p><label for="ftel">Telefone:</label><input type="tel" name="tel" id="ftel" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}" placeholder="(XX) XXXX-XXXX"></p>
+
+        <p><label for="fmail">Email:</label><input type="email" name="mail" id="fmail" size="30" maxlength="50"></p>
+
+        <p><label for="fpass">Senha:</label><input type="password" name="pass" id="fpass" size="8" minlength="3" maxlength="8"></p>
+
+        <p><label for="fmont">Mês de aniversário:</label><input type="month" name="month" id="fmonth"></p>
+
+        <p><label for="fdate">Data da compra:</label><input type="date" name="date" id="fdate"></p>
+
+        <p><label for="ftime">Hora da compra:</label><input type="time" name="time" id="ftime"></p>
+
+        <p><label for="fcolour">Cor:</label><input type="color" name="colour" id="fcolour" value="#000000"></p>
+
+        <p><label for="fsat">Satisfação:</label><input type="range" name="sat" id="fsat" min="1" max="5"></p>
+
+        <p><input type="checkbox" name="acep" id="facep"><label for="facep">Aceito os <a href="#">termos de uso</a></label></p>
+
+        <p><input type="submit" value="Enviar"><input type="reset" value="Limpar"></p>
+
+    </form>
+    <hr>
+    <form action="cadastro.php" method="get">
+        <p><label for="imod">Modelo de celular:</label>
+            <select name="mod" id="imod">
+                <option value="">Escolha...</option>
+                <optgroup label="Apple">
+                    <option value="AIP1132">iPhone 11 32GB</option>
+                    <option value="AIP11P64">iPhone 11 Pro 64GB</option>
+                    <option value="AIP11PM256">iPhone 11 Pro Max 256GB</option>
+                </optgroup>
+                <optgroup label="Samsung">
+                    <option value="SGXYS10L">Galaxy S10 Lite</option>
+                    <option value="SGXYS20U128">Galaxy S20 Ultra 128GB</option>
+                    <option value="SGXYN10256">Galaxy Note10 256GB</option>
+                </optgroup>
+            </select>
+        </p>
+        <p><label for="ispec">Especificações Técnicas:</label><br>
+        <textarea name="spec" id="ispec" cols="40" rows="10"></textarea></p>
+        <p><label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <optgroup label="Negócios">
+                    <option value="Administrador"></option>
+                    <option value="Contabilista"></option>
+                    <option value="Gestor de RH"></option>
+                </optgroup>
+                <optgroup label="Artes e Design">
+                    <option value="Animador"></option>
+                    <option value="Gestor"></option>
+                    <option value="Fotógrafo"></option>
+                </optgroup>
+                <optgroup label="Ciências Exatas">
+                    <option value="Analista de Sistemas"></option>
+                    <option value="Estatístico"></option>
+                    <option value="Matemático"></option>
+                </optgroup>
+                <optgroup label="Ciências Humanas">
+                    <option value="Advogado"></option>
+                    <option value="Linguista"></option>
+                    <option value="Professor"></option>
+                </optgroup>
+            </datalist>
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <hr>
+    <form action="cadastro.php" method="get" oninput="tot.value = Number(price.value) * Number(quan.value);">
+        <p><label for="prod">Produto: </label><input type="text" name="prod" id="prod"></p>
+        <p><label for="price">Preço: R$ </label><input type="number" name="price" id="price"></p>
+        <p><label for="quan">Quantidade: </label><input type="number" name="quan" id="quan" min="1" max="100"></p>
+        <p><label for="tot">Total: </label><output name="tot" id="tot">0</output></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
