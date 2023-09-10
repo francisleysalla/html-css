@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;        
+    background: aqua url('../imagens/r-phone-p.jpg') left center/cover no-repeat fixed;
+}
+main{
+    position: absolute;
+    background-color: white;
+    padding: 30px 150px;
+    display: inline-block;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    border-radius: 5px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+img{
+    display:none;
+    margin: auto;
+}
+img#small{
+    display: block;
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* Media Queries */
+/* Medium/tablet */
+@media only screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#medium{display: block;}
+    img#small{display: none;}
+
+
+}
+/* Large/PC */
+@media only screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#large{display: block;}
+    img#small{display: none;}
+
+}
+/* Xlarge/TV */
+@media only screen and (min-width:1200px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#xlarge{display: block;}
+    img#small{display: none;}
+
+}
+/* Print */
+@media only print{
+    body{
+        position: relative;
+        background-image: url('../imagens/back-print.jpg');
+        font-family: 'Courier New', Courier, monospace;
+    }
+    img#print{display: block;}
+    img#small{display: none;}
+
+    main{
+        border: 1px solid black;
+        box-shadow: none;
+    }
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+    body::after{
+        position: absolute;
+        content: "Conteúdo do site Media Queries por Francisley Salla";
+        right: 0%;
+        bottom: 0%;
+    }
+}

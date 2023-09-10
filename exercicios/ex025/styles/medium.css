@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    background: aqua url('../imagens/r-tablet.jpg') center center/cover no-repeat fixed;
+}
+img#small{
+    display:none;
+}
+img#medium{
+    display: block;
+}

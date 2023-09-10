@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+span#ham{
+    display: none;
+}
+nav#menu{
+    display: block;
+}
+nav > a {
+    display: inline-block;
+    border:none;
+}
+nav > a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
