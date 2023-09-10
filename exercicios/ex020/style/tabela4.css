@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+col.c1{
+    background-color: orange;
+}
+col.c2{
+    background-color: yellow;
+}
+col.c3{
+    background-color: red;
+}
+div{
+    overflow-x: auto;
+}
