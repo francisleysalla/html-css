@@ -1,5 +1,5 @@
-[README em Português](https://github.com/francisleysalla/html-css/blob/public/README.md#primeiros-passos-em-html-e-css)  
-[README on English](https://github.com/francisleysalla/html-css/blob/public/README.md#html-and-css-first-steps)  
+[Versão em Português](https://github.com/francisleysalla/html-css/blob/public/README.md#primeiros-passos-em-html-e-css)  
+[English Version](https://github.com/francisleysalla/html-css/blob/public/README.md#html-and-css-first-steps)  
 
 # Primeiros passos em HTML e CSS
 
