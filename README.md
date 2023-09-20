@@ -1,17 +1,6 @@
-Internal link português
-Internal link inglês
-
 # Primeiros passos em HTML e CSS
 
-Esse repositório é o resultado dos meus primeiros passos utilizando HTML5 e CSS3, além do JavaScript necessário para resolução dos exercícios.
-
-Foi criado durante o [curso de HTML5 e CSS3](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n) do [Curso em Vídeo](https://www.youtube.com/@CursoemVideo)
-
-Os exercícios foram feitos durante as aulas enquanto os desafios <!-- foram realizados sem influência do professor, exceto  -->
-<!-- Algumas opções:
-   Retirar os desafios maiores como android, cordel
-   Terminar a frase
--->
+Esse repositório é o resultado dos meus primeiros passos utilizando HTML5 e CSS3. Ele foi criado durante o [curso de HTML5 e CSS3](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n) do [Curso em Vídeo](https://www.youtube.com/@CursoemVideo), módulos de 1 a 4, partindo do zero em HTML e CSS.
 
 ## Exercícios
 Primeiros passos em HTML:
@@ -27,15 +16,14 @@ Primeiros passos em HTML:
 - Ex010: Links
 - Ex011: Imagens responsivas
 - Ex012: Adicionando mídias
-
+---
 Primeiros passos em CSS:
 - Ex013: Primeiros passos em CSS
 - Ex014: Gradiente linear e cores
 - Ex015: Importando fontes
 - Ex016: Pseudo-classes 
-- Ex017: Modelo de caixas 
-
-
+- Ex017: Modelo de caixas  
+ ---
 - Ex018: Grouping Tags
 - Ex019: CSS Background
    - Parte 1: Background image
@@ -56,7 +44,7 @@ Primeiros passos em CSS:
    - Parte 2: Iframe com srcdoc
    - Parte 3: Mudando o iframe com um link
 
-
+---
 Formulários e Media Query
 - Ex022: Elementos de um formulário
 - Ex023: Login
@@ -68,13 +56,19 @@ Formulários e Media Query
 
 ## Desafios 
 
-# HTML and CSS first steps
-
-## Exercises
-
-## Challenges
-
-<!-- List of thing to do on this repo:
-1. Put a name on each folder instead of numbers
-2. Add the links to Guanabara's PDF's with the desafios and exercícios.
-3. Maybe put the biggest projects in an dedicated repository. -->
+Primeiros passos em HTML e CSS:
+- D001: Parágrafos e quebras de linha
+- D002: Adicionando favicons e imagens
+- D003: Mapa-mundi, com imagens e quebras de linha
+- D004: Adicionando emojis
+- D005: Redes sociais: Gustavo Guanabara
+- D006: Lista de tags HTML
+- D007: Imagens responsivas
+- D008: Desafio da navegação
+- D009: Catálogo de vídeos  
+---
+Desafios mais estruturados:
+- D010: Desafio Android
+- D011: Centralização de fundo e conteúdo
+- D012: Desafio Cordel
+- D013: Redes sociais: Gustavo Guanabara 2.0
