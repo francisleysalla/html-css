@@ -67,7 +67,7 @@ Primeiros passos em HTML e CSS:
 - D008: Desafio da navegação
 - D009: Catálogo de vídeos  
 ---
-Desafios mais estruturados:
+Desafios mais avançados:
 - D010: Desafio Android
 - D011: Centralização de fundo e conteúdo
 - D012: Desafio Cordel
